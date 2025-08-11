@@ -1,69 +1,76 @@
-# React + TypeScript + Vite
+# React TypeScript Advanced Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates advanced React component patterns and techniques using TypeScript. It builds on foundational React+TS skills to create reusable, flexible, and type-safe components suitable for complex applications.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Advanced component composition
+- Higher-Order Components (HOCs)
+- Render props pattern
+- Controlled and uncontrolled components
+- Custom hooks with TypeScript
+- Context API with strong typing
+- Type-safe event handling and props
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js (v14 or later recommended)
+- npm or yarn
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/anton1opedro/react-ts-advanced-components.git
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd react-ts-advanced-components
+   ```
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+   or
+
+   ```bash
+   yarn install
+   ```
+
+### Running the App
+
+Start the development server:
+
+```bash
+npm start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+or
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+yarn start
 ```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
+
+## Project Structure
+
+* `src/` — React components and TypeScript source files
+* `public/` — Static assets
+* `package.json` — Project dependencies and scripts
+
+## Learning Goals
+
+* Implement advanced React patterns with TypeScript
+* Build reusable, flexible, and maintainable components
+* Effectively use HOCs, render props, and custom hooks
+* Manage state and context with type safety
+
+## License
+
+This project is open source and available under the MIT License.
