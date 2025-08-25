@@ -14,11 +14,6 @@ This project demonstrates advanced React component patterns and techniques using
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js (v14 or later recommended)
-- npm or yarn
-
 ### Installation
 
 1. Clone the repository:
@@ -36,12 +31,6 @@ This project demonstrates advanced React component patterns and techniques using
    npm install
    ```
 
-   or
-
-   ```bash
-   yarn install
-   ```
-
 ### Running the App
 
 Start the development server:
@@ -50,13 +39,7 @@ Start the development server:
 npm start
 ```
 
-or
-
-```bash
-yarn start
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
+Open [http://localhost::5173](http://localhost::5173) in your browser to see the app.
 
 ## Project Structure
 
